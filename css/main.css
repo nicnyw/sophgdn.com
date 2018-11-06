@@ -20,7 +20,7 @@ src: url(../fonts/googleSans/GoogleSans-Regular.ttf);
 * Responsive elements from Skeleton V2.0.4 · Copyright 2014, Dave Gamache · www.getskeleton.com
 * Free to use under the MIT license · http://www.opensource.org/licenses/mit-license.php · 12/29/2014
 */
-/* Grid */
+/* ------ Grid ------ */
 .container {
   position: relative;
   width: 100%;
@@ -52,7 +52,6 @@ src: url(../fonts/googleSans/GoogleSans-Regular.ttf);
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
-
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
@@ -116,9 +115,10 @@ src: url(../fonts/googleSans/GoogleSans-Regular.ttf);
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+/* ------ End grid ------ */
+
 
 /* Base Styles */
-
 html {
   font-size: 62.5%; }
 
