@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Sophie Gardner</title>
+  <meta name="description" content="Product designer, formerly doing user experience design and research at Google and Palantir">
+  <meta name="author" content="">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118972038-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-118972038-1');
+  </script>
+  <!-- End Google Analytics -->
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/hoverStates.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<body>
+ <!-- On load fade in page -->
+<script>
+$(document).ready(function() {
+    $("body").css("display", "none");
+    $("body").fadeIn(200);
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(100, redirectPage);
+    });
+    function redirectPage() {
+        window.location = linkLocation;
+      }
+});
+</script>
+
+<!-- Navigation Menu -->
+<div class="container">
+  <section class="header">
+    <div class="row" id="menu">
+      <div class="onecolumn" style="margin-top: 10%; margin-bottom:25%;">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="transition, navbar-link" id="active" href="http://www.sophgdn.com/">Work</a></li>
+          <li class="navbar-item"><a class="transition, navbar-link" href="http://www.sophgdn.com/contact.html">Contact</a></li>
+          <li class="navbar-item"><a class="transition, navbar-link" href="https://medium.com/@sophg" target="_blank">Writing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- <canvas data-processing-sources="dots.pde"></canvas> -->
+
+<!-- Site heading -->
+  <div class="row">
+    <div class="onecolumn" style="margin-bottom:10%;">
+      <p id="font-bold">Sophie Gardner. Product & AI designer, formerly at <a href="https://design.google/" class="heading-link" target="_blank">Google</a> and <a href="https://www.palantir.com/careers/teams/design" class="heading-link" target="_blank">Palantir</a></p>
+    </div>
+  </div>
+</section>
+
+
+<div class="row example">
+  <div class="six columns">
+      <div class="portfolio-container" style="margin-left: 5px;">
+        <a class="example-screenshot-wrapper work" href="google-departure-board.html"> <img class="example-screenshot" src="images/transit.png"> </a>
+        <a href="google-departure-board.html" class="work"><h2 class="thumbnail-title"><span id="title">Departure Boards for Google Maps</span></h2></a>
+        <a href="google-departure-board.html" class="work"><h3>2016 · Android</h3></a></a>
+      </div>
+    </div>
+    <div class="six columns">
+        <div class="portfolio-container" style="margin-left: 5px;">
+          <a class="example-screenshot-wrapper work" href="design-bot.html"> <img class="example-screenshot" src="TwitterBot.png"> </a>
+          <a href="design-bot.html" class="work"><h2 class="thumbnail-title"><span id="title">@DesignAdviceBot Twitter Bot</span></h2></a>
+          <a href="design-bot.html" class="work"><h3>2018 · Javascript</h3></a></a>
+        </div>
+      </div>
+</div>
+</div>
+</body>
+</html>

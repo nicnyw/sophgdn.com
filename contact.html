@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Sophie Gardner</title>
+  <meta name="description" content="Product designer, formerly doing user experience design and research at Google and Palantir">
+  <meta name="author" content="">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118972038-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-118972038-1');
+  </script>
+  <!-- End Google Analytics -->
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- Javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="javascript/code.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<body>
+ <!-- On load fade in page -->
+<script>
+$(document).ready(function() {
+    $("body").css("display", "none");
+    $("body").fadeIn(200);
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(100, redirectPage);
+    });
+    function redirectPage() {
+        window.location = linkLocation;
+      }
+});
+</script>
+
+
+
+<!-- Navigation Menu -->
+<div class="container">
+  <section class="header">
+    <div class="row" id="menu">
+      <div class="onecolumn" style="margin-top: 10%; margin-bottom:25%;">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="transition, navbar-link" href="http://www.sophgdn.com/">Work</a></li>
+          <li class="navbar-item"><a class="transition, navbar-link" id="active" href="http://www.sophgdn.com/contact.html">Contact</a></li>
+          <li class="navbar-item"><a class="transition, navbar-link" href="https://medium.com/@sophg" target="_blank">Writing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Site heading -->
+      <div class="row">
+        <div class="onecolumn" style="margin-bottom:10%;">
+          <p id="font-bold">Check out my <a href="documents/CV.pdf" class="heading-link" target="_blank">CV</a>, <a href="https://codepen.io/sophgdn/" class="heading-link" target="_blank">CodePen</a> and <a href="https://github.com/sophgdn" class="heading-link" target="_blank">Github</a>. Hit me up on <a href="https://twitter.com/sophgdn"
+            class="heading-link" target="_blank">Twitter</a>, <a href="https://www.linkedin.com/in/sophg/" class="heading-link" target="_blank">LinkedIn</a> or <a class="heading-link" id="changeToEmail" href="mailto:sophgdn@gmail.com">email</a></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="row example">
+      <div class="six columns">
+          <div class="portfolio-container">
+
+          </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
