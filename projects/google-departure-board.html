@@ -4,13 +4,14 @@
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
   <title>Sophie Gardner · Departure Boards</title>
+  <meta charset="utf-8">
   <meta name="description" content="Sophie Gardner · Google Maps Departure Boards">
-  <meta name="author" content="">
+  <meta name="author" content="Sophie Gardner">
   <meta name="theme-color" content="#000000">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118972038-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -18,7 +19,6 @@
     gtag('js', new Date());
     gtag('config', 'UA-118972038-1');
   </script>
-  <!-- End Google Analytics -->
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,11 +32,12 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/main.css">
 
     <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../scripts/toggleShowBtn.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -46,28 +47,11 @@
 </head>
 
 
-
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-
-<script>
-  $(document).ready(function() {
-
-        $('.showprocess').click(function() {
-                $('.toggle').slideToggle("slow");
-        });
-
-        $("#fold").click(function () {
-        $(".fold_p").fadeOut(function () {
-            $(".fold_p").text(($(".fold_p").text() == '+ Show design process') ? '- Hide design process' : '+ Show design process').fadeIn();
-            })
-         })
-
-    });
-</script>
-
-
+  <!-- Header
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
   <div class="row">
     <div class="portfolio-project-container">
@@ -102,9 +86,9 @@
  </div>
 
 
-
+ <!-- Design Process
+ –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="toggle" style="display: none;">
-
      <div class="row">
        <div class="onecolumn">
          <div class="photo-container">
@@ -119,9 +103,10 @@
          </div>
        </div>
      </div>
-
   </div>
 
+  <!-- Mockups
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  <div class="row">
    <div class="onecolumn">
      <div class="photo-container" style="margin-top: 2%;">
@@ -249,9 +234,5 @@ This led to the current design where the tabbed bar lets users narrow the depart
 
 <!-- End Document
  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
 </body>
-
-
 </html>

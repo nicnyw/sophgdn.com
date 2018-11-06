@@ -1,24 +1,11 @@
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
-
 /* Variables */
 :root {
     --text-grey: #969696;;
     --text-black: #333333;
-    --green-solid: rgba(52, 168, 83, 100);
-    --green-hover: rgba(52, 168, 83, 0.3);
     --twitter-blue: #55ACEE;
 }
 
-
 /* Fonts */
-
 @font-face {
 font-family: GoogleSansBold;
 src: url(../fonts/googleSans/GoogleSans-Bold.ttf);
@@ -29,6 +16,10 @@ font-family: GoogleSansRegular;
 src: url(../fonts/googleSans/GoogleSans-Regular.ttf);
 }
 
+/*
+* Responsive elements from Skeleton V2.0.4 · Copyright 2014, Dave Gamache · www.getskeleton.com
+* Free to use under the MIT license · http://www.opensource.org/licenses/mit-license.php · 12/29/2014
+*/
 /* Grid */
 .container {
   position: relative;
@@ -81,7 +72,6 @@ src: url(../fonts/googleSans/GoogleSans-Regular.ttf);
 
   .one-half.column                { width: 48%;  }
 
-
   /* Offsets */
   .offset-by-one.column,
   .offset-by-one.columns          { margin-left: 8.66666666667%; }
@@ -113,19 +103,18 @@ src: url(../fonts/googleSans/GoogleSans-Regular.ttf);
 
   .offset-by-one-half.column,
   .offset-by-one-half.columns     { margin-left: 52%; }
-
 }
 
-
-.portfolio-container {
+/* Base Styles */
+.portfolio-content {
   margin-bottom: 20%;
 }
 
-.example {
+.portfolio-content {
   position: relative;
   margin-top: 4rem; }
 
-.example-screenshot-wrapper {
+.image-wrapper {
   border-radius: 8px;
   display: block;
   position: relative;
@@ -137,18 +126,15 @@ src: url(../fonts/googleSans/GoogleSans-Regular.ttf);
    -webkit-transition: box-shadow .25s ease-in;
   }
 
-  .portfolio-container:hover .example-screenshot-wrapper{
+.portfolio-container:hover
+.image-wrapper {
     box-shadow: 0 6px 6px -2px rgba(0,0,0,.3), 0 6px 8px 0 rgba(0,0,0,.14), 0 2px 16px 0 rgba(0,0,0,.22);
-    }
+  }
 
-  .example-screenshot {
+.thumbnail {
     width: 100%;
     height: auto; }
 
-/* Base Styles */
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 
@@ -160,80 +146,23 @@ body {
   color: var(--text-black);
 }
 
-.header{
-  text-align: left;
-}
-
-.header img{
-  margin-top: 5%;
-}
-
-.header img a{
-  text-decoration: none;
-}
-
 .header p{
+  text-align: left;
   font-size: 7rem;
-    font-weight: 700;
-    line-height: 8.5rem;
-    font-family: 'roboto', monospace;
-}
-
-.home-feature-container{
-  padding: 4% 4% 12% 0;
-}
-
-.home-feature-container-onecolumn{
-  padding: 4% 0% 4% 0;
-}
-
-.home-feature-container img{
-  max-width: 100%;
-}
-
-.home-feature-container-onecolumn img{
-  max-width: 100%;
+  font-weight: 700;
+  line-height: 8.5rem;
+  font-family: 'roboto', monospace;
 }
 
 .header a{
-  /* color: #969696; */
   color: #333333
   font-weight: 700;
   text-decoration: none;
   font-family: 'GoogleSansBold', sans-serif;
 }
 
-.story-title{
-  text-transform:uppercase;
-  font-size: 4rem;
-  font-weight:400;
-  line-height: 1.2;
-  letter-spacing: 0rem;
-}
-
-.story-footer{
-  text-align: center;
-  border-top: 1px solid #e6e6e6;
-  margin-top: 10%;
-}
-
-.story-footer p{
-  font-size: 1.4rem;
-  color:#969696;
-  padding: 5% 0 0 0;
-  text-transform: uppercase;
-}
-
 #menu{
   padding: 2% 0 2% 0;
-}
-
-#article{
-  margin: 8% 0 8% 0;
-}
-
-#home-entries{
-  margin: 6% 0 6% 0;
 }
 
 .navbar-list{
@@ -248,16 +177,6 @@ body {
   height: 40px;
 }
 
-.social{
-  text-decoration: underline;
-}
-
-.desc{
-font-style: italic;
-font-size: 1.1rem;
-color:#B4B4B4;
-}
-
 .desc-story{
   font-size: 1.2rem;
   color: #B4B4B4;
@@ -266,11 +185,6 @@ color:#B4B4B4;
 }
 
 .desc-story a{
-color:#B4B4B4;
-text-decoration: underline;
-}
-
-.desc a{
 color:#B4B4B4;
 text-decoration: underline;
 }
